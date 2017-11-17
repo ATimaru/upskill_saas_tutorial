@@ -54,7 +54,7 @@ $(document).on('turbolinks:load', function(){
   }
    return false;
   });
-  
+
   //Stripe will return a card token
   function stripeResponseHandler(status, response) {
     //Get the token from the response
@@ -65,5 +65,6 @@ $(document).on('turbolinks:load', function(){
     
     //Submit form to our Rails app
     theForm.get(0).submit();
+    
   }
 });
